@@ -22,10 +22,11 @@ cd  TP_Meta3C/
 toutes les lignes de commande que vous verrez s'exécuteront depuis cet emplacement désormais !!!!
 
 
-créer un répertoire pour y déposer les fichiers fastq
+créer un répertoire pour y déposer les fichiers fastq et les fichiers log des différents logiciles
 
 ```sh
 mkdir -p fastq/
+mkdir -p log_files/
 ```
 
 Vous allez travailler avec 4 fichiers de sorties de séquençage : les reads en sens (forward) et en anti-sens (reverse) pour chaque banque construites (ShotGun et 3C). Vos fichiers sont nommés ainsi et se trouve sur l'espace GAIA:
@@ -55,7 +56,7 @@ scp -r votrelogin@sftpcampus.pasteur.fr:/pasteur/gaia/projets/p01/Enseignements/
 
 C'est bon ? 
 
-normalement si vous faites la commande suivante, vous devriez voir 6 répertoires.
+normalement si vous faites la commande suivante, vous devriez voir 7 répertoires.
 
 ```sh
 ls -l
