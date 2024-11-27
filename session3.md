@@ -9,9 +9,7 @@ La métagénomique permet aujourd'hui d'étudier les micro-organismes non cultiv
 
 
 ## MetaTOR - Metagenomic Tridimensional Organisation-based Reassembly
-
-Principle of MetaTOR pipeline:
-
+principe du pipeline MetaTOR:
 ![metator_pipeline](docs/images/metator_figure.png)
 
 if you want more described doc of MetaTOR and the different possibilities offered by the pipeline , various tutorials are available at the following links:
@@ -21,6 +19,7 @@ if you want more described doc of MetaTOR and the different possibilities offere
 * [Anvio](https://merenlab.org/software/anvio/) manual curation of the contaminated bins. Available [here](docs/example/manual_curation_of_metator_MAGs.md).
 * Visualization and scaffolding of the MAGs with the contactmap modules of MetaTOR. Available [here](docs/example/MAG_visualization_and_scaffolding.md).
 
+le programme permet soit de lancer un pipeline end-to-end soit un pipeline step-by-step.
 
 ## Step-by-step
 
@@ -48,18 +47,18 @@ mkdir -p binning
 et maintenant, lancez la ligne de commande permettant de générer le réseau d'interactions (5 -10 min).
 
 ```sh
-metator network -t 4 -1 fastq/libX_filtre_3C_for.fastq.gz -2 fastq/libX_filtre_3C_rev.fastq.gz -a assemblage/assembly_all.fa -o binning/metator/
+metator network -t 4 -1 fastq/libX_3C_for.fastq.gz -2 fastq/libX_3C_rev.fastq.gz -a assemblage/assembly_all.fa -o binning/metator/
 ```
 
 en vous servant du fichier log généré par MetaTOR ainsi que du fichier "network" généré, répondez aux questions suivantes:
 
-Qi27 : Combien de nœuds (ou contigs) contient votre réseau global ?
+Q : Combien de nœuds (ou contigs) contient votre réseau global ?
 
-Qi28 : Combien de paires de reads ont été alignées  ?
+Q : Combien de paires de reads ont été alignées  ?
 
-Qi29 : Combien de paires de reads ont été alignées sur deux contigs différents ?
+Q : Combien de paires de reads ont été alignées sur deux contigs différents ?
 
-Qi30 : déduisez en le 3D ratio (nb de reads liant 2 contigs différent par rapport au nombre total de reads alignés)
+Q : déduisez en le 3D ratio (nb de reads liant 2 contigs différent par rapport au nombre total de reads alignés)
 
 NB: il est nécessaire de ne pas prendre en compte les interactions au sein d'un même contig (intra-contig)... c'est pourquoi votre réseau ne contient pas les liens intra-contigs.
 
@@ -110,11 +109,11 @@ explorer le dossier de sortie et notamment le fichier contig_data_partition.txt
 cat binning/metator/contig_data_partition.txt | head
 ```
 
-Qi31 : Combien de bins détectez-vous ?
+Q : Combien de bins détectez-vous ?
 
-Qi32 : Combien de contigs ne sont associés à aucun autre (ou combien de communautés ne comprennent qu'un seul contig) ?
+Q : Combien de contigs ne sont associés à aucun autre (ou combien de communautés ne comprennent qu'un seul contig) ?
 
-Qi33 : Combien de bin contiennent plus de 10 Kb, 100 Kb, 500 Kb et 1 Mb de séquences ?
+Q : Combien de bin contiennent plus de 10 Kb, 100 Kb, 500 Kb et 1 Mb de séquences ?
 
 Notez bien ces chiffres et refaites tourner l'algorithme avec les mêmes lignes de commandes (il faut mettre l'option -F afin d'écraser les fichiers existants !! ou sinon vous mettez les fichiers de sorties dans un repertoire différent ;)) 
 
@@ -122,7 +121,7 @@ Notez bien ces chiffres et refaites tourner l'algorithme avec les mêmes lignes 
 metator partition -i 1 -O 100 -F -t 4 -n binning/metator/network.txt -c binning/metator/contig_data_network.txt -a assemblage/assembly_all.fa -o binning/metator/
 ```
 
-Qi34 : Détectez-vous le même nombre de communautés que précédemment ? Ces communautés sont-elles de la même taille ? Qu'en déduisez-vous ?
+Q : Détectez-vous le même nombre de communautés que précédemment ? Ces communautés sont-elles de la même taille ? Qu'en déduisez-vous ?
 
 
 •	Louvain itératif
@@ -138,7 +137,7 @@ Il est ainsi possible d’analyser l’évolutions des différents groupes de co
 
 A l’aide de vos connaissances, des scripts déjà utilisés et des données fournies, choisisissez le seuil qui vous semble le plus approprié et réaliser une analyse de l'évolution des groupes de contigs en fonction du nombre d'itérations de l'algorithme de Louvain (cf graph ci-dessous)
 
-Qi34 : Comment évolue votre binning au cours des différentes itérations ? Combien d’itérations de louvain faudrait-il faire selon vous (justifier ce choix) ?
+Q : Comment évolue votre binning au cours des différentes itérations ? Combien d’itérations de louvain faudrait-il faire selon vous (justifier ce choix) ?
 
 à vous de jouer ;)
 
