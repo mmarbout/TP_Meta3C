@@ -144,6 +144,21 @@ Q : Comment évolue votre binning au cours des différentes itérations ? Combie
 ![louvain_iteration1](docs/images/louvain_ite.png)
 
 
+<details><summary>Solution</summary>
+<p>
+
+```sh
+for it in 1 2 3 4 5 6 7 8 9 10 20
+do
+  for thr in 50 70 80 90 100
+  do
+  metator partition -i "$it" -O "$thr" -F -t 4 -n binning/metator/network.txt -c binning/metator/contig_data_network.txt -a     assemblage/assembly_all.fa -o binning/metator_"$it"_"$thr"/
+  done
+done
+```
+</p>
+</details>
+
 
 
 
