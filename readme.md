@@ -9,7 +9,7 @@ L'objectif est de caractériser la composition du communauté bactérienne artif
 
 Nous avons réalisé différentes banques génomiques (shotgun et 3C) à partir d'un mélange inconnu d'espèces.
 
-Vous allez prendre un numéro de banque 3C entre 1 et 20 et poursuivre l'analyse.
+Vous allez prendre un numéro de banque entre 1 et 20 et poursuivre l'analyse.
 
 Le TP s'organisera de la manière suivante:
 
@@ -23,11 +23,11 @@ echo "ceci est une ligne de commande"
 
 ## Planning des sessions 
 
-* 1 - mise en place de l'environnement, récupération des données et analyse de l'assemblage (Demi-journée 1)
-* 2 - Annotation d'un assemblage (Demi-journée 2)
+* 1 - mise en place de l'environnement, récupération des données et analyse de l'assemblage (demi-journée 1)
+* 2 - Annotation d'un assemblage (demi-journée 2)
 * 3 - Binning des contigs par exploitations des interactions inter-contigs (demi-journée 3)
-* 4 - Validation et analyse des bins obtenus (Journée 4)
-* 5 - Session en autonomie (Journée 5)
+* 4 - Validation et analyse des bins obtenus (journée 4)
+* 5 - Session en autonomie (journée 5)
 
 
 ## Contact
