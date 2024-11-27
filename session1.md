@@ -1,4 +1,4 @@
-# Session 1: demi-journée du 09/12
+# Session 1 : demi-journée du 09/12
 
 ## mise en place de l'environnment et de l'arborescence
 
