@@ -1,4 +1,4 @@
-# Session 1 - Demi-journée du 09/12
+# Session 1 - demi-journée du 09/12
 
 ## mise en place de l'environnment et de l'arborescence
 
@@ -8,7 +8,7 @@ se placer sur le bureau de la Machine virtuelle
 cd ~/Bureau/
 ```
 
-créer un répertoire (l'option -p permet de créer des répertoires de manière recursive et dans des répertoires n'existant pas et évite les messages d'erreurs ... c'est parfois utile et c'est un réflexe chez moi))
+créer un répertoire (l'option -p permet de créer des répertoires de manière recursive et dans des répertoires n'existant pas et évite les messages d'erreurs ... c'est parfois utile et c'est un réflexe chez moi)
 
 ```sh
 mkdir -p TP_Meta3C/
