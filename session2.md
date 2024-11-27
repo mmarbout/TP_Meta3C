@@ -40,11 +40,12 @@ Prodigal a créé deux fichiers, le fichier de protéine .faa et le fichier de g
 
 Voici un exemple de sortie de gène :
 
-      >NODE_1__1 # 2 # 232 # -1 # ID=1_1 ; partial=10 ; start_type=ATG ; rbs_motif=None ; rbs_spacer=None ; gc_cont=0.424
-      ATGTTCAAGTCAGCCGTTTATTCAATTTTAGCCGCTTCTTTGGTTAATGCAGGTACCATTCCCCTCGGAA
-      AACTATCTGACATTGATAAAATCGGAAGCCAAACAGAGATTTTCCCATTTTTGGGTGGTTCTGGGCCATA
-      CTACTCTTTCCCTGGTGATTACGGTATTTCTTGACTTGCCGGAAAGTTGTGAAATGAAGCAAGTGCAA
-      ATGGTTGGTAGACACGGTGAA
+      >NODE_16394_len_315_2 # 93 # 314 # 1 # ID=1_2;partial=01;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.401
+      ATGATCAAAATTAAAGCGGTAGATTCTCTCCAAGAAAAAGAGAAAGTACTTTCTTTGATGGCCGAAGAGC
+      CGTCGGACGAAACCTCGGCGGAAGAAATGGAGCCTGCGAAAGATAAAAAAAATTTGGTGACACGTCAGCG
+      ACTTTCTTTTGAGAATAGAAAACTTGAAAAAAGAATCGTCAGACTTTGCGCAAAGGCCATTATCGACTTC
+      AATCTCATTGAA
+
 
 L'en-tête Prodigal comprend : (i) le nom du contig et le numéro du gène/de la protéine, (ii) la position de départ et (iii) la position d'arrêt dans le contig, (iv) si dans le brin (+1) ou le brin complémentaire inverse (-1) (v) l'identification du gène, (vi) si partiel dans le brin gauche seulement (10), le brin droit seulement (01) ou les deux (11), (vii) le type de codon de départ, (viii) le motif du site de liaison au ribosome détecté (ix) la distance d'espacement du site de liaison au ribosome, (x) le contenu en gc.
 
