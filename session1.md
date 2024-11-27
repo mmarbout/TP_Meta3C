@@ -82,7 +82,7 @@ micromamba self-update
 il est alors possible de créer un environnement dédié à notre logiciel MetaTOR à partir d'un fichier YAML qui définit l'environnement.
 
 ```sh
-micromamba env create --name metator --file software/metator_binning.yaml
+micromamba env create --name metator --file software/metator.yaml
 ```
 
 il faut ensuite activer l'envrionnement
