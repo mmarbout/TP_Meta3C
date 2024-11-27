@@ -173,7 +173,7 @@ les bins de grande taille et de bonne qualité sont dénommés des MAGs pour Met
 <p>
 
 ```sh
-bash scripts/micomplete_analysis.sh binning/metator/contig_data_partition.txt binning/metator/miComplete.txt figures/
+bash scripts/MAGs_repartition.sh metator_final/bin_summary.txt figures/
 ```
 </p>
 </details>
@@ -200,7 +200,7 @@ en explorant le script vous devriez être en mesure de le lancer avec les bons a
 <p>
 
 ```sh
-bash scripts/micomplete_analysis.sh binning/metator/contig_data_partition.txt binning/metator/miComplete.txt figures/
+bash scripts/GC_cov_analysis.sh metator_final/contig_data_final.txt metator_final/bin_summary.txt figures/
 ```
 </p>
 </details>
@@ -217,7 +217,7 @@ pour celui là , je vais vous filer un coup de pouce ... il va fallor lancer le 
 lancement du script bin_analysis.sh qui prends 3 arguments en entrée [1-targeted_bin; 2-output_directory; 3-contig_data_file from MetaTOR]
 
 ```sh
-bash scripts/bin_analysis MetaTOR_22_2 figures/ binning/metator_final/contig_data_final.txt
+bash scripts/bin_analysis.sh MetaTOR_22_2 figures/ metator_final/contig_data_final.txt
 ```
 
 ### Matrices d’interactions
