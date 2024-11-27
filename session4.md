@@ -103,13 +103,18 @@ bash scripts/micomplete_analysis.sh binning/metator/contig_data_partition.txt bi
 
 vous savez maintenant evaluer la qualité de vos bins en utilisant MiComplete... Félicitations, vous pouvez mainteant passer à la suite !!
 
-il demeure dans votre binning des MAGs très contaminés. avez vous une idée pour décontaminer ces MAGs?
+## Louvain recursif
 
-vous trouverez sur l'espace GAIA, le répertoire de sortie de MetaTOR après un cycle complet du programme, copiez le:
+Il demeure dans votre binning des MAGs très contaminés. avez vous une idée pour décontaminer ces MAGs?
+
+En effet, l'algorithme de louvain présente des limites de résolution quand il est appliqué a de grandss graphs. L'un des possibilité est d'isoler chaque sous-réseau d'interactions correspondants à des bins contaminés et de refaire tourner l'algorithme uniquement sur ces sous-réseaux.
+
+la commande de metator pour cette étape est la commande validation 
 
 ```sh
-scp -r votrelogin@@sftpcampus.pasteur.fr:/pasteur/gaia/projets/p01/Enseignements/GAIA_ENSEIGNEMENTS/AdG_2023_2024/TP_Meta/metator_final/  binning/
+ls -l metator validation -h
 ```
+
 
 vous pouvez explorer le repertoire de sortie:
 
