@@ -10,10 +10,10 @@ mkdir -p temp/
 mkdir -p data/
 mkdir -p figures/
 
-for threshold in 50 60 70 80 90 100
+for threshold in 20 40 60 80 100
 do
 
-	for iteration in 1 2 3 4 5 10 20 30 40 50
+	for iteration in 1 2 3 4 5 10 20
 	do
 
 		rm data/thr"$threshold"_data.csv
