@@ -92,6 +92,15 @@ Q : Combien de génome(s) reconstruit(s) et complet(s) avez-vous ? Quelle propor
 ![outMAG](docs/images/MAG3.png)
 
 
+<details><summary>Solution</summary>
+<p>
+
+```sh
+bash scripts/binning_analysis.sh /pasteur/homes/mmarbout/Desktop/TP_Meta3C/
+```
+</p>
+</details>
+
 vous savez maintenant evaluer la qualité de vos bins en utilisant MiComplete... Félicitations, vous pouvez mainteant passer à la suite !!
 
 il demeure dans votre binning des MAGs très contaminés. avez vous une idée pour décontaminer ces MAGs?
