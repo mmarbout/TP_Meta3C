@@ -103,7 +103,7 @@ bash scripts/micomplete_analysis.sh binning/metator/contig_data_partition.txt bi
 
 vous savez maintenant evaluer la qualité de vos bins en utilisant MiComplete... Félicitations, vous pouvez mainteant passer à la suite !!
 
-## Louvain recursif
+### Louvain recursif
 
 Il demeure dans votre binning des MAGs très contaminés. avez vous une idée pour décontaminer ces MAGs?
 
@@ -115,27 +115,28 @@ la commande de metator pour cette étape est la commande validation
 ls -l metator validation -h
 ```
 
+voous pouvez lancer la commande pour la prodédure récursive de cette manière:
 
-vous pouvez explorer le repertoire de sortie:
 
 ```sh
-ls -l binning/metator_final/
+metator validation -a assemblage/assembly_all.fa -c binning/metator_20_80/contig_data_partition.txt -f binning/metator_20_80/overlapping_bin/ -n binning/metator/network.txt -o binning/metator_20_80/ -t 4
+vous pouvez explorer le repertoire de sortie:
 ```
 
-refaites tourner miComplete sur cet output et les fichiers FastA des MAGs [final_bin/] afin de répondre à la question 36 ;)
+refaites tourner miComplete sur cet output et les fichiers FastA des MAGs [final_bin/] afin de répondre à la question suivante ;)
 
 Q : faites une analyse comparative de votre binning avec celui obtenu après l'étape recursive.
 
-###Analyse des bins obtenus
+## Analyse des bins obtenus
 
-pour cette session, nous allons travailler avec les données obtenues après le pipeline complet de MetaTOR (partitionnement itératif et récursif). Nous allons analyser les bins que nous avons obtenus. 
+pour cette session, nous allons travailler avec les données obtenues après le pipeline complet de MetaTOR (partitionnement itératif et récursif et évaluation des bins par checkM et non par miComplete). Nous allons analyser les bins que nous avons obtenus. 
 
 vous pouvez explorer le repertoire de sortie
 
 ```sh
 ls -l binning/metator_final/
 ```
-il contient notamment 2 fichiers conteant les résultats finaux sur les contigs et les bins obtenus:
+il contient notamment 2 fichiers contenant les résultats finaux sur les contigs et les bins obtenus:
 
 
 **Contig_data_final.txt**
@@ -167,6 +168,16 @@ les bins de grande taille et de bonne qualité sont dénommés des MAGs pour Met
 
 ![outMAG](docs/images/MAG5.png)
 
+
+<details><summary>Solution</summary>
+<p>
+
+```sh
+bash scripts/micomplete_analysis.sh binning/metator/contig_data_partition.txt binning/metator/miComplete.txt figures/
+```
+</p>
+</details>
+
 ### Couverture et contenu en GC
 
 Une autre façon d'analyser la diversité de notre communauté microbienne est de regarder la distribution de leur couverture et de leur contenu en GC.
@@ -182,6 +193,17 @@ dans la figure ci-dessous, les boxplot sont colorés en fonction de la qualité 
 si vous avez un peu de mal ... vous pouvez jeter un oeil au script GC_cov_analysis dans le dossier scripts/.
 
 en explorant le script vous devriez être en mesure de le lancer avec les bons arguments ;)
+
+
+
+<details><summary>Solution</summary>
+<p>
+
+```sh
+bash scripts/micomplete_analysis.sh binning/metator/contig_data_partition.txt binning/metator/miComplete.txt figures/
+```
+</p>
+</details>
 
 
 ### Analyse de bin unique
