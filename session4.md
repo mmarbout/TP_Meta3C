@@ -1,4 +1,4 @@
-# Session 4 : Journée du 12/12
+# Session 4 : journée du 12/12
 
 
 ## Validation des bins obtenus
@@ -83,7 +83,7 @@ un génome Contaminé:
 o	sa contamination se situe au delà de 10% (>1.1)
 
 
-Qi35 : Combien de génome(s) reconstruit(s) et complet(s) avez-vous ? Quelle proportion en terme de séquence cela représente t il ?
+Q : Combien de génome(s) reconstruit(s) et complet(s) avez-vous ? Quelle proportion en terme de séquence cela représente t il ?
 
 ![outMAG](docs/images/MAG1.png)
 
@@ -110,7 +110,7 @@ ls -l binning/metator_final/
 
 refaites tourner miComplete sur cet output et les fichiers FastA des MAGs [final_bin/] afin de répondre à la question 36 ;)
 
-Qi36 : faites une analyse comparative de votre binning avec celui obtenu après l'étape recursive.
+Q : faites une analyse comparative de votre binning avec celui obtenu après l'étape recursive.
 
 ###Analyse des bins obtenus
 
