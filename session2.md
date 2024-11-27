@@ -1,4 +1,4 @@
-# Session 2: demi-journée du 0/12
+# Session 2: demi-journée du 10/12
 
 ## Annotation d'un métagénome
 
