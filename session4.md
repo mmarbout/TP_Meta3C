@@ -96,7 +96,7 @@ Q : Combien de génome(s) reconstruit(s) et complet(s) avez-vous ? Quelle propor
 <p>
 
 ```sh
-bash scripts/binning_analysis.sh /pasteur/homes/mmarbout/Desktop/TP_Meta3C/
+bash scripts/micomplete_analysis.sh binning/metator/contig_data_partition.txt binning/metator/miComplete.txt figures/
 ```
 </p>
 </details>
