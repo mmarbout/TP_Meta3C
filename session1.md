@@ -1,4 +1,4 @@
-# Session 1 - demi-journée du 09/12
+# Session 1: demi-journée du 09/12
 
 ## mise en place de l'environnment et de l'arborescence
 
@@ -40,7 +40,7 @@ Vous allez travailler avec 4 fichiers de sorties de séquençage : les reads en 
 choisissez au hasard parmi les 10 jeux de données et copier les fichiers fastq correspondants (n'oubliez pas de changer le X !!!)
 
 ```sh
-scp votrelogin@sftpcampus.pasteur.fr:/pasteur/gaia/projets/p01/Enseignements/GAIA_ENSEIGNEMENTS/AdG_2023_2024/TP_Meta/fastq/libX_* fastq/
+scp votrelogin@sftpcampus.pasteur.fr:/pasteur/gaia/projets/p01/Enseignements/GAIA_ENSEIGNEMENTS/AdG_2024-2025/TP_Meta3C/fastq/libX_* fastq/
 ```
 
 pour les différentes séances nous aurons également besoin de différentes données et fichiers.
@@ -51,7 +51,7 @@ Copier les dossiers suivants sur GAIA --> [database/] [software/] [metator_final
 je vous donne un exemple ci-dessous pour un de ces répertoires et je vous laisse faire pour les suivants ;)
 
 ```sh
-scp -r votrelogin@sftpcampus.pasteur.fr:/pasteur/gaia/projets/p01/Enseignements/GAIA_ENSEIGNEMENTS/AdG_2023_2024/TP_Meta/database/ ./
+scp -r votrelogin@sftpcampus.pasteur.fr:/pasteur/gaia/projets/p01/Enseignements/GAIA_ENSEIGNEMENTS/AdG_2024-2025/TP_Meta3C/database/ ./
 ```
 
 C'est bon ? 
@@ -62,7 +62,9 @@ normalement si vous faites la commande suivante, vous devriez voir 7 répertoire
 ls -l
 ```
 
-il reste une dernière chose à faire et pas des moindres ... installer le pipeline metator.
+![arborescence](docs/images/arbo.png)
+
+il reste une dernière chose à faire et pas des moindres ... installer le pipeline metator!!!
 
 mais avant il va falloir installer quelques programmes. Pour cela nous allons utilisons Conda qui est un système de gestion de paquets et d'environnement open-source qui fonctionne sous Windows, macOS et Linux. Conda installe, exécute et met à jour rapidement les paquets et leurs dépendances. Conda crée, enregistre, charge et bascule facilement entre les environnements sur votre ordinateur local.
 
@@ -116,12 +118,8 @@ Pourquoi un assemblage itératif ? Comme indiqué dans Megahit : Alors qu'une pe
 
 Nous avons généré un assemblage issue d'un grand nombre de reads shotgun de notre communauté. Cet assemblage a été réalisé sur le cluster de calcul de l'Institut Pasteur car le nombre de reads est assez important et, par conséquent, les temps de calcul et les besoins en ressources également. Vous trouverez deux fichiers dans le repertoire [assemblage/]: 
 
-* le fichier de sortie brut de Megahit
-* le fichier avec des entrées de contigs renomées
-
-L'objectif maintenant va être d'analyser cet assemblage.
-
-Différents logiciels permettent d'analyser les résultats d'assemblage. Nous utiliserons le programme quast qui permet d'obtenir différentes statistiques sur un assemblage. Il s’utilise en ligne de commande :
+* le fichier de sortie brut de Megahit: final.contigs.fa
+* le fichier avec des entrées de contigs renomées: assembly_all.fa
 
 explorer le répertoire de sortie de l'assemblage
 
@@ -143,18 +141,19 @@ le fichier de sortie de megahit se présente de la manière suivante:
 
 Dans cet exemple, l'en-tête megahit fournit un nom de contig, incluant la dernière étape kmer et le numéro de contig. Ensuite, le flag indique que le contig est connecté à d'autres contigs dans le graphe d'assemblage (flag=0), non connecté (flag=1) ou circulaire (flag=2 éventuellement 3 aussi). Le multi correspond à peu près au nombre moyen de kmer. Le len correspond à la longueur du contig.
 
-Qi9: Combien de contigs avez vous dans votre assemblage ?
+L'objectif maintenant va être d'analyser cet assemblage.
 
-Qi10: Quelle est la taille de votre plus grand contig ?
+Q: Combien de contigs avez vous dans votre assemblage ?
 
-Qi11: Quelle est la taille moyenne de vos contigs ?
+Q: Quelle est la taille de votre plus grand contig ?
 
-Qi12: Combien de contigs circulaires avez vous ?
+Q: Quelle est la taille moyenne de vos contigs ?
 
-Qi13: Combien de contigs indépendants ?
+Q: Combien de contigs circulaires avez vous ?
 
+Q: Combien de contigs indépendants ?
 
-certains logiciels sont dédiés à l'analyse des assemblages. Nous allons voir l'utilisation du logiciel QUAST.
+Différents logiciels permettent d'analyser les résultats d'assemblage. Nous utiliserons le programme QUAST qui permet d'obtenir différentes statistiques sur un assemblage. Il s’utilise en ligne de commande :
 
 ![Quast](docs/images/Quast.png)
 
@@ -167,20 +166,19 @@ mkdir -p assemblage/rapport_assemblage/
 lancer les statistiques d'assemblage
 
 ```sh
-/Formation_AdG/quast-5.1.0rc1/quast.py assemblage/final.contigs.fa -o assemblage/rapport_assemblage/ > log_files/quast_ass_raw.log 2>&1 
+/Formation_AdG/quast-5.2.0/quast.py assemblage/final.contigs.fa -o assemblage/rapport_assemblage/ > log_files/quast_ass_raw.log 2>&1 
 ```
 
 Afin d'avoir accès aux statistiques, ouvrir le fichier [report.html] (double clic).
 
-Qi14 : Quelles sont les données fournies par Quast ?
+Q : Quelles sont les données fournies par Quast ?
 
-Qi15 : Donnez une définition du N50 ?
+Q : Donnez une définition du N50 ?
 
-Qi16 : Quelle est la valeur théorique du N100 ?
+Q : Quelle est la valeur théorique du N100 ?
 
 
-
-Désormais vous allez travailler sur cet assemblage mais nous allons prendre le fichier avec les en-têtes renommées.
+Désormais vous allez travailler sur cet assemblage mais pour la suite nous allons prendre le fichier avec les en-têtes renommées.
 
 
 
