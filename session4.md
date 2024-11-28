@@ -229,7 +229,7 @@ Pour cela, nous allons utiliser une fonction de notre programme MetaTOR qui perm
 ```sh
 metator contactmap -h
 ```
-on peut ainsi générer des matrices d'interactions pour différents "objets". Nous allons commencer par générer la matrice du MAG MetaTOR_22_2
+on peut ainsi générer des matrices d'interactions pour différents "objets". Nous allons commencer par générer la matrice du MAG MetaTOR_21_1
 
 nous allons commencer par créer un répertoire de sortie
 
@@ -240,7 +240,7 @@ mkdir -p matrices/
 nous allons ensuite lancer la commande suivante:
 
 ```sh
-metator contactmap -t 8 -a assemblage/assembly_all.fa -c binning/metator_final/contig_data_final.txt -e DpnII,HinfI -n "MetaTOR_22_2" -f -o matrices/MetaTOR_22_2/ -O "final_bin" binning/metator_final/alignment_sorted.pairs.gz
+metator contactmap -t 8 -a assemblage/assembly_all.fa -c metator_final/contig_data_final.txt -e DpnII,HinfI -n "MetaTOR_21_1" -f -o matrices/ -O "final_bin" metator_final/alignment_sorted.pairs.gz
 ```
 ce script génère uniquement la matrice au format txt qui est ensuite utilisable via le programme hicstuff qui est notre logiciel de traitement des matrices d'interactions.
 
@@ -256,7 +256,7 @@ hicstuff view -h
 vous pouvez maintenant lancer la commande suivante:
 
 ```sh
-hicstuff view -n -b 10kb -f matrices/MetaTOR_22_2/MetaTOR_22_2.frags.tsv -o matrices/MetaTOR_22_2/mat_10kb_norm.pdf matrices/MetaTOR_22_2/MetaTOR_22_2.mat.tsv
+hicstuff view -n -b 10kb -f matrices/MetaTOR_21_1.frags.tsv -o matrices/mat_MetaTOR_21_1_10kb_norm.pdf matrices/MetaTOR_21_1.mat.tsv
 ```
 
 lorsque vous utilisez cette commande, faites bien attention à la taille de vos bins (taille d'un pixel, i.e. l'option -b)
