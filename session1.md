@@ -139,7 +139,7 @@ le fichier de sortie de megahit se présente de la manière suivante:
 
     AAATAATACCACCAATGGCACAACCAATGTTGAAAATGGAGACAATTAAACCA....
 
-Dans cet exemple, l'en-tête megahit fournit un nom de contig, incluant la dernière étape kmer et le numéro de contig. Ensuite, le flag indique que le contig est connecté à d'autres contigs dans le graphe d'assemblage (flag=0), non connecté (flag=1) ou circulaire (flag=2 éventuellement 3 aussi). Le multi correspond à peu près au nombre moyen de kmer. Le len correspond à la longueur du contig.
+Dans cet exemple, l'en-tête megahit fournit un nom de contig, incluant la dernière étape kmer et le numéro de contig. Ensuite, le flag indique que le contig est connecté à d'autres contigs dans le graphe d'assemblage (flag=0), non connecté (flag=1) ou circulaire (flag=2 ou 3). Le multi correspond à peu près au nombre moyen de kmer. Le len correspond à la longueur du contig.
 
 L'objectif maintenant va être d'analyser cet assemblage.
 
