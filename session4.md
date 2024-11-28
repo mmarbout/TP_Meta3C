@@ -266,7 +266,11 @@ vous devriez obtenir une figure comme celle ci:
 ![outMAG](docs/images/outMAG9.png)
 
 
-il est également possible de faire cela pour des contigs. En vous servant de l'aide de la fonction "contactmap" et de tout ce que vous avez appris, générez la matrice d'interactions (bin = 5kb) du contig de plus de 100kb le plus couvert de vos données.
+il est également possible de faire cela pour des contigs. En vous servant de l'aide de la fonction "contactmap" et de tout ce que vous avez appris, générez la matrice d'interactions (bin = 1kb) du contig NODE_21821_len_26639.
+
+que pouvez vous me dire sur ce contig ?
+
+
 
 
 
