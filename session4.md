@@ -217,7 +217,7 @@ pour celui là , je vais vous filer un coup de pouce ... il va fallor lancer le 
 lancement du script bin_analysis.sh qui prends 3 arguments en entrée [1-targeted_bin; 2-output_directory; 3-contig_data_file from MetaTOR]
 
 ```sh
-bash scripts/bin_analysis.sh MetaTOR_22_2 figures/ metator_final/contig_data_final.txt
+bash scripts/bin_analysis.sh MetaTOR_21_1 figures/ metator_final/contig_data_final.txt
 ```
 
 ### Matrices d’interactions
