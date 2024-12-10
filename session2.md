@@ -176,7 +176,16 @@ vous pouvez par exemple utiliser ce site : http://bioinformatics.psb.ugent.be/we
 
 ![resfinder](docs/images/Resfinder.png)
 
+<details><summary>Solution</summary>
+<p>
 
+```sh
+diamond blastp -p 8 --db database/Resfams.dmnd  --outfmt 6 qseqid qlen slen length pident qcovhsp  -q annotations/prodigal/assembly_prot.fa | awk '{print $1,($4/$2)*100,$5}' | awk '$2>=80 && $3>=80 {print $1}' | sed 's/_/ /g' | awk '{print $1"_"$2"_"$3"_"$4}' | sort -u > annotations/diamond_positive_contigs.txt
+cat annotations/hmm_output/prot_vs_resfam.txt | grep "NODE" | awk '$5<=1e-50 {print $1}' | sed 's/_/ /g' | awk '{print $1"_"$2"_"$3"_"$4}' | sort -u > annotations/hmm_positive_contigs.txt
+cat database/ResFinder/results_tab.txt | sed '1d' | awk '{print $6}' | sort -u  > annotations/resfinder_positive_contigs.txt
+```
+</p>
+</details>
 
 
 
