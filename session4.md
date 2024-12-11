@@ -112,7 +112,7 @@ En effet, l'algorithme de louvain présente des limites de résolution quand il 
 la commande de metator pour cette étape est la commande validation 
 
 ```sh
-ls -l metator validation -h
+metator validation -h
 ```
 
 voous pouvez lancer la commande pour la prodédure récursive de cette manière:
@@ -120,8 +120,8 @@ voous pouvez lancer la commande pour la prodédure récursive de cette manière:
 
 ```sh
 metator validation -a assemblage/assembly_all.fa -c binning/metator_20_80/contig_data_partition.txt -f binning/metator_20_80/overlapping_bin/ -n binning/metator/network.txt -o binning/metator_20_80/ -t 4
-vous pouvez explorer le repertoire de sortie:
 ```
+vous pouvez explorer le repertoire de sortie:
 
 refaites tourner miComplete sur cet output et les fichiers FastA des MAGs [final_bin/] afin de répondre à la question suivante ;)
 
