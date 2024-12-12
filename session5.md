@@ -26,3 +26,5 @@ Vous avez internet, vous pouvez chercher des publications sur ce sujet
 Je peux également vous fournir des données ou faire tourner des analyses si besoin ;)
 
 
+# reconstruire des genomes à partir des cartes de contact 
+
