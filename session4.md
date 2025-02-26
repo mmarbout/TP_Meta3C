@@ -134,7 +134,7 @@ pour cette session, nous allons travailler avec les données obtenues après le 
 vous pouvez explorer le repertoire de sortie
 
 ```sh
-ls -l binning/metator_final/
+ls -l metator_final/
 ```
 il contient notamment 2 fichiers contenant les résultats finaux sur les contigs et les bins obtenus:
 

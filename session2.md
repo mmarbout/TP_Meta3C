@@ -110,7 +110,7 @@ on estime que l'on a un vrai homologue lorsque l'on a une identité d'au moins 8
 ![outfmt2](docs/images/outfmt2.png)
 
 ```sh
-diamond blastp -p 8 --db database/Resfams.dmnd -o annotations/blast_output/prot_vs_AMR.txt --outfmt 6 qseqid sseqid pident qcovs  -q annotations/prodigal/assembly_prot.fa
+diamond blastp -p 8 --db database/Resfams.dmnd -o annotations/blast_output/prot_vs_AMR.txt --outfmt 6 qseqid sseqid pident -q annotations/prodigal/assembly_prot.fa
 ```
 
 Q: combien de vos gènes répondent aux critères définis au dessus ?
