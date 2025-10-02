@@ -271,7 +271,18 @@ il est également possible de faire cela pour des contigs. En vous servant de l'
 que pouvez vous me dire sur ce contig ?
 
 
+<details><summary>Solution</summary>
+<p>
 
+```sh
+metator contactmap -t 8 -a assemblage/assembly_all.fa -c metator_final/contig_data_final.txt -e DpnII,HinfI -n "NODE_21821_len_26639" -f -o matrices/ -O "contig" metator_final/alignment_0_sorted.pairs.gz
+hicstuff view -n -b 1kb -f matrices/NODE_21821_len_26639.frags.tsv -o matrices/NODE_21821_len_26639_1kb_norm.pdf matrices/NODE_21821_len_26639.mat.tsv
+```
+</p>
+</details>
+
+
+Pendant le temps qu'il nous reste, faites moi les matrices du plus grand contig, du contig le plus abondant, du MAG le plus abondant, du MAG le plus contaminé ... 
 
 
 
