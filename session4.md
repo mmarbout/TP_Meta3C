@@ -101,7 +101,19 @@ bash scripts/micomplete_analysis.sh binning/metator/contig_data_partition.txt bi
 </p>
 </details>
 
-vous savez maintenant evaluer la qualité de vos bins en utilisant MiComplete... Félicitations, vous pouvez mainteant passer à la suite !!
+vous savez maintenant evaluer la qualité de vos bins en utilisant MiComplete... Félicitations, vous pouvez mainteant faire la même chose avec le deuxième output de metator pour lequel nous aovns réalisé 40 itérations avec un seuil de 80% !!
+
+<details><summary>Solution</summary>
+<p>
+
+```sh
+for f in binning/metator_v2/overlapping_bin/*.fa ; do mv $f  binning/metator_v2/overlapping_bin/`basename $f .fa`.fna ;done
+find binning/metator_v2/overlapping_bin/ -maxdepth 1 -type f -name "*.fna" | miCompletelist.sh > binning/metator_v2/overlapping_bin/listbins.tab
+miComplete binning/metator_v2/overlapping_bin/listbins.tab --threads 8 --hmms Bact105 -o binning/metator_v2/miComplete.txt
+```
+</p>
+</details>
+
 
 ### Louvain recursif
 
@@ -115,7 +127,7 @@ la commande de metator pour cette étape est la commande validation
 metator validation -h
 ```
 
-voous pouvez lancer la commande pour la prodédure récursive de cette manière:
+vous pouvez lancer la commande pour la prodédure récursive de cette manière:
 
 
 ```sh
