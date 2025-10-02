@@ -101,7 +101,7 @@ bash scripts/micomplete_analysis.sh binning/metator/contig_data_partition.txt bi
 </p>
 </details>
 
-vous savez maintenant evaluer la qualité de vos bins en utilisant MiComplete... Félicitations, vous pouvez mainteant faire la même chose avec le deuxième output de metator pour lequel nous aovns réalisé 40 itérations avec un seuil de 80% !!
+vous savez maintenant evaluer la qualité de vos bins en utilisant MiComplete... Félicitations, vous pouvez mainteant faire la même chose avec le deuxième output de metator pour lequel nous avons réalisé 40 itérations avec un seuil de 80% et faire une comparaison des résultats obtenus.
 
 <details><summary>Solution</summary>
 <p>
