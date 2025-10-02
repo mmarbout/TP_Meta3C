@@ -132,7 +132,7 @@ Q : Comment évolue le binning au cours des différentes itérations ? Combien d
 <details><summary>Solution</summary>
 <p>
 
-nous allons prendre comme paramètres, 40 itérations de louvain et un seuil de 80%. 
+nous allons prendre comme paramètres: 40 itérations de louvain et un seuil de 80%. 
 
 ```sh
 metator partition -i 40 -O 80 -t 4 -n binning/metator/network.txt -c binning/metator/contig_data_network.txt -a assemblage/assembly_all.fa -o binning/metator_v2/
