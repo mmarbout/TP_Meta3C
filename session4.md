@@ -138,7 +138,7 @@ vous pouvez explorer le repertoire de sortie:
 
 refaites tourner miComplete sur cet output et les fichiers FastA des MAGs [final_bin/] afin de répondre à la question suivante ;)
 
-Q : faites une analyse comparative de votre binning avec celui obtenu après l'étape recursive.
+Q : faites une analyse comparative de vos différents binning.
 
 ## Analyse des bins obtenus
 
