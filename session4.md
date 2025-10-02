@@ -1,4 +1,4 @@
-# Session 4 : journée du 12/12
+# Session 4
 
 
 ## Validation des bins obtenus
