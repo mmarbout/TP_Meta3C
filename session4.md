@@ -132,7 +132,7 @@ vous pouvez lancer la commande pour la prodédure récursive de cette manière:
 
 ```sh
 for f in binning/metator_v2/overlapping_bin/*.fna ; do mv $f  binning/metator_v2/overlapping_bin/`basename $f .fna`.fa ;done
-metator validation -a assemblage/assembly_all.fa -c binning/metator_v2/contig_data_partition.txt -f binning/metator_v2/overlapping_bin/ -n binning/metator/network.txt -o binning/metator_20_80/ -t 4
+metator validation -a assemblage/assembly_all.fa -c binning/metator_v2/contig_data_partition.txt -f binning/metator_v2/overlapping_bin/ -n binning/metator/network.txt -o binning/metator_v2/ -t 4
 ```
 vous pouvez explorer le repertoire de sortie:
 
