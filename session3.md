@@ -123,25 +123,13 @@ ces différents paramètres se contrôle avec les options
     -O overlapping threshold (%) ex: -O 80
     -i nombre d'itérations ex: -i 40
 
-Il est ainsi possible d’analyser l’évolutions des différents groupes de contigs en fonction du nombre d’itérations de Louvain (1, 5, 10, 20, 30, 40, 50) et du seuil de regroupement des contigs (70%, 80%, 90%, 100%). 
-
-A l’aide de vos connaissances, des scripts déjà utilisés et des données fournies, choisisissez le seuil qui vous semble le plus approprié et réaliser une analyse de l'évolution des groupes de contigs en fonction du nombre d'itérations de l'algorithme de Louvain (cf graph ci-dessous)
-
-Q : Comment évolue votre binning au cours des différentes itérations ? Combien d’itérations de louvain faudrait-il faire selon vous (justifier ce choix) ?
-
-à vous de jouer ;)
+Il est ainsi possible d’analyser l’évolutions des différents groupes de contigs en fonction du nombre d’itérations de Louvain (1, 5, 10, 20, 30, 40, 50) et du seuil de regroupement des contigs (70%, 80%, 90%, 100%) (cf image ci-dessous). 
 
 ![louvain_iteration1](docs/images/louvain_ite.png)
 
+Q : Comment évolue le binning au cours des différentes itérations ? Combien d’itérations de louvain faudrait-il faire selon vous (justifier ce choix) ?
 
-<details><summary>Solution</summary>
-<p>
 
-```sh
-bash scripts/louvain_iteration_analysis.sh /pasteur/homes/mmarbout/Desktop/TP_Meta3C/
-```
-</p>
-</details>
 
 
 
