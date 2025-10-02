@@ -79,10 +79,10 @@ une fois installé , nous pouvons vérifier que tout se passe bien en faisant un
 ```sh
 micromamba self-update
 ```
-il est alors possible de créer un environnement dédié à notre logiciel MetaTOR à partir d'un fichier YAML qui définit l'environnement.
+il est alors possible de créer un environnement dédié à notre logiciel MetaTOR.
 
 ```sh
-micromamba env create --name metator --file software/metator.yaml
+create -n metator bioconda::metator
 ```
 
 il faut ensuite activer l'envrionnement
