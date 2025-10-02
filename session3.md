@@ -120,14 +120,25 @@ L'algorithme de Louvain est non déterministe, c'est à dire qu'en utilisant un 
 
 ces différents paramètres se contrôle avec les options
 
-    -O overlapping threshold (%) ex: -O 80
-    -i nombre d'itérations ex: -i 40
+    -O overlapping threshold (%) ex: -O 30
+    -i nombre d'itérations ex: -i 5
 
 Il est ainsi possible d’analyser l’évolutions des différents groupes de contigs en fonction du nombre d’itérations de Louvain (1, 5, 10, 20, 30, 40, 50) et du seuil de regroupement des contigs (70%, 80%, 90%, 100%) (cf image ci-dessous). 
 
 ![louvain_iteration1](docs/images/louvain_ite.png)
 
 Q : Comment évolue le binning au cours des différentes itérations ? Combien d’itérations de louvain faudrait-il faire selon vous (justifier ce choix) ?
+
+<details><summary>Solution</summary>
+<p>
+
+nous allons prendre comme paramètres, 40 itérations de louvain et un seuil de 80%. 
+
+```sh
+metator partition -i 40 -O 80 -t 4 -n binning/metator/network.txt -c binning/metator/contig_data_network.txt -a assemblage/assembly_all.fa -o binning/metator_v2/
+```
+</p>
+</details>
 
 
 
