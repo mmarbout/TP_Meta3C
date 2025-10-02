@@ -46,7 +46,7 @@ scp votrelogin@sftpcampus.pasteur.fr:/pasteur/gaia/projets/p01/Enseignements/GAI
 pour les différentes séances nous aurons également besoin de différentes données et fichiers.
 
 
-Copier les dossiers suivants sur GAIA --> [database/] [software/] [metator_final/] [scripts/] [assemblage/] 
+Copier les dossiers suivants sur GAIA --> [database/] [metator_final/] [scripts/] [assemblage/] 
 
 je vous donne un exemple ci-dessous pour un de ces répertoires et je vous laisse faire pour les suivants ;)
 
@@ -82,7 +82,7 @@ micromamba self-update
 il est alors possible de créer un environnement dédié à notre logiciel MetaTOR à partir d'un fichier YAML qui définit l'environnement.
 
 ```sh
-micromamba env create --name metator --file software/metator.yaml
+micromamba env create --file metator.yaml
 ```
 
 il faut ensuite activer l'envrionnement

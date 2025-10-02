@@ -86,17 +86,7 @@ Une modularité est une mesure de la qualité d'une partition des sommets (les n
 metator partition -h
 ```
 
-nous devons d'abord indiquer au programme ou se trouve l'algorithme de louvain car il ne fait par parti stricto-senso du programme MetaTOR et il est codé en c++. Il faut également lui donner les permissions d'éxécution.
-
-```sh
-chmod +x -R software/gen-louvain/
-```
-
-```sh
-export LOUVAIN_PATH=software/gen-louvain/
-```
-
-nous allons maintenant lancer le partionnement de notre réseau avec la ligne de commande suivante:
+Nous allons maintenant lancer le partionnement de notre réseau avec la ligne de commande suivante:
 
 ```sh
 metator partition -i 1 -O 100 -t 4 -n binning/metator/network.txt -c binning/metator/contig_data_network.txt -a assemblage/assembly_all.fa -o binning/metator/
