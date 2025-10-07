@@ -140,8 +140,6 @@ refaites tourner miComplete sur cet output et les fichiers FastA des MAGs [final
 
 Q : faites une analyse comparative de vos différents binning.
 
-# ATTENTION PARTIE EN CHANTIER !!!
-
 ## Analyse des bins obtenus
 
 pour cette session, nous allons travailler avec les données obtenues après le pipeline complet de MetaTOR (partitionnement itératif et récursif et évaluation des bins par checkM et non par miComplete). Nous allons analyser les bins que nous avons obtenus. 
@@ -181,7 +179,7 @@ bash scripts/MAGs_repartition.sh metator_final/bin_summary.txt metator_final/che
 
 Une autre façon d'analyser la diversité de notre communauté microbienne mais également de voir les relations entre complétion/contamination et couverture/GC est de regarder la distribution de leur couverture et de leur contenu en GC.
 
-à l'aide des données du fichier contig_data_final.txt, générez des graphs similaires à ceux ci-dessous (il vous faudra utiliser la fonction boxplot de R)
+à l'aide des données du fichier contig_data_final.txt et du fichier checkM_results_complete.txt générez des graphs similaires à ceux ci-dessous (il vous faudra utiliser la fonction boxplot de R)
 
 dans la figure ci-dessous, les boxplot sont colorés en fonction de la qualité des MAGs ... si vous arrivez à le faire ... bravo !!
 
@@ -216,10 +214,8 @@ pour celui là , je vais vous filer un coup de pouce ... il va fallor lancer le 
 lancement du script bin_analysis.sh qui prends 3 arguments en entrée [1-targeted_bin; 2-output_directory; 3-contig_data_file from MetaTOR]
 
 ```sh
-bash scripts/bin_analysis.sh MetaTOR_21_1 figures/ metator_final/contig_data_final.txt
+bash scripts/bin_analysis.sh metator_00010_00000 figures/ metator_final/contig_data_final.txt
 ```
-
-# FIN DE CHANTIER
 
 ### Matrices d’interactions
 
