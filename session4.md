@@ -151,10 +151,11 @@ vous pouvez explorer le repertoire de sortie
 ```sh
 ls -l binning/metator_final/
 ```
-il contient les mêmes fichiers que ceux que vous avez obtenus plus le dossier d'ouput de checkM:
+il contient les mêmes fichiers que ceux que vous avez obtenus plus les fichiers de sortie de checkM:
 - bin_summary.txt
 - contig_data_final.txt
--  
+- checkM_results_complete.txt
+- checkM_taxonomy_output.txt
 
 Nous allons utiliser ces fichiers pour analyser notre communauté.
 
