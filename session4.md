@@ -179,7 +179,7 @@ bash scripts/MAGs_repartition.sh metator_final/bin_summary.txt metator_final/che
 
 ### Couverture et contenu en GC
 
-Une autre façon d'analyser la diversité de notre communauté microbienne est de regarder la distribution de leur couverture et de leur contenu en GC.
+Une autre façon d'analyser la diversité de notre communauté microbienne mais également de voir les relations entre complétion/contamination et couverture/GC est de regarder la distribution de leur couverture et de leur contenu en GC.
 
 à l'aide des données du fichier contig_data_final.txt, générez des graphs similaires à ceux ci-dessous (il vous faudra utiliser la fonction boxplot de R)
 
@@ -199,7 +199,7 @@ en explorant le script vous devriez être en mesure de le lancer avec les bons a
 <p>
 
 ```sh
-bash scripts/GC_cov_analysis.sh metator_final/contig_data_final.txt metator_final/bin_summary.txt figures/
+bash scripts/GC_cov_analysis.sh metator_final/contig_data_final.txt metator_final/checkM_results_complete.txt figures/
 ```
 </p>
 </details>
