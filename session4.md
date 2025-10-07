@@ -172,7 +172,7 @@ les bins de grande taille et de bonne qualité sont dénommés des MAGs pour Met
 <p>
 
 ```sh
-bash scripts/MAGs_repartition.sh metator_final/bin_summary.txt figures/
+bash scripts/MAGs_repartition.sh metator_final/bin_summary.txt metator_final/checkM_taxonomy_output.txt figures/
 ```
 </p>
 </details>
