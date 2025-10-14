@@ -32,17 +32,17 @@ Le module repose sur une propriété particulière des cartes de contact des gé
 Le module repose sur une stratégie en plusieurs étapes articulée autour de la représentation des contigs dans un graphe de contacts pondéré, combinée à une modélisation statistique du bruit de fond afin d'assurer la spécificité des associations détectées.
 *	Deux types d’objets sont définis : les MAGs (bins bactériens) et les mgeMAGs. Chaque objet regroupe un ensemble de contigs issus de l’assemblage shotgun, selon les clusters générés par MetaTOR ou fournis par un autre outil.
 *	À partir des lectures Hi-C mappées sur les contigs, le module construit un graphe pondéré où les nœuds représentent les contigs et les arêtes traduisent des contacts physiques, pondérés par leur fréquence. Ce graphe constitue la base des analyses suivantes.
-●	Afin de discriminer les vraies interactions biologiques des artefacts techniques, le module estime une distribution du bruit inter-MAG, c’est-à-dire des interactions entre ses contigs et ceux d’autres MAGs. La moyenne des interactions inter-MAG constitue donc le bruit de fond de l’expérience. Ce bruit ainsi calculé, est utilisé pour filtrer les contacts non significatifs.
+*	Afin de discriminer les vraies interactions biologiques des artefacts techniques, le module estime une distribution du bruit inter-MAG, c’est-à-dire des interactions entre ses contigs et ceux d’autres MAGs. La moyenne des interactions inter-MAG constitue donc le bruit de fond de l’expérience. Ce bruit ainsi calculé, est utilisé pour filtrer les contacts non significatifs.
 *	Pour chaque mgeMAG, le module identifie les MAGs présentant un signal Hi-C enrichi par rapport au bruit. Ainsi, une association est validée si :
-**	le nombre de  contigs en  contacts entre la MGE et un MAG est supérieur à un seuil minimal (par défaut 5);
-**	la somme totale des interactions entre le MGE et un MAG est au moins égale 10% de ses interactions avec tous les MAGs avec lesquels il est en contact;
-**	et la somme totale des interactions entre le MGE et un MAG est supérieure  au seuil de bruit de fond de l’expérience estimé.
+  	le nombre de  contigs en  contacts entre la MGE et un MAG est supérieur à un seuil minimal (par défaut 5);
+  	la somme totale des interactions entre le MGE et un MAG est au moins égale 10% de ses interactions avec tous les MAGs avec lesquels il est en contact;
+  	et la somme totale des interactions entre le MGE et un MAG est supérieure  au seuil de bruit de fond de l’expérience estimé.
 *	Une matrice de contacts MGE × MAG est ensuite générée, chaque cellule représentant un score de co-localisation potentielle.
 *	Annotation de l’hôte principal : Le module sélectionne, comme hôte principal le MAG présentant le score le plus élevé d’interaction significative avec un mgeMAG. Les autres interactions, si présentes, sont également listées et hiérarchisées.
 *	Sorties et visualisation : En complément des résultats tabulés, le module fournit :
-**	des plots de distributions comparant les contacts intra-MAG, inter-MAG et mgeMAG (log-transformés).
-**	un graphe interactif d’interactions MGE–MAG.
-**	un fichier d’annotation enrichi intégrant les hôtes détectés.
+  	des plots de distributions comparant les contacts intra-MAG, inter-MAG et mgeMAG (log-transformés).
+  	un graphe interactif d’interactions MGE–MAG.
+  	un fichier d’annotation enrichi intégrant les hôtes détectés.
 
 ![module_host](docs/images/module_host.png)
 
