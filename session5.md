@@ -8,7 +8,9 @@ Ce module est encore en développement et ne fonctionne pas encore avec cette no
 
 si vous voulez jeter un oeil à cette nouvelle approche et aux derniers résultats sur le sujet, c'est par ici:
 
-[Phages with a broad host range are common across ecosystems]([https://pasteur.hal.science/pasteur-05269627v1])
+[Phages with a broad host range are common across ecosystems](https://pasteur.hal.science/pasteur-05269627v1)
+
+![paper_mge](docs/images/paper_mge.png)
 
 
 ### Principe du module metator mge 
