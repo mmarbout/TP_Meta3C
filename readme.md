@@ -23,11 +23,12 @@ echo "ceci est une ligne de commande"
 
 ## Planning des sessions 
 
-* 1 - mise en place de l'environnement, récupération des données et analyse de l'assemblage (demi-journée 1)
-* 2 - Annotation d'un assemblage (demi-journée 2)
-* 3 - Binning des contigs par exploitations des interactions inter-contigs (demi-journée 3)
-* 4 - Validation et analyse des bins obtenus (journée 4)
-* 5 - Session en autonomie (journée 5)
+* 1 - mise en place de l'environnement, récupération des données et analyse de l'assemblage
+* 2 - Annotation d'un assemblage
+* 3 - Binning des contigs par exploitations des interactions inter-contigs
+* 4 - Validation et analyse des MAGs obtenus
+* 5 - Analyse du binning des MGEs
+* 6 - Session en autonomie
 
 
 ## Contact
