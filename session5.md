@@ -1,7 +1,7 @@
-# Session 5 - Journée du 13/12
+# Session 5
 
 
-## binning des Elements Genetiques Mobiles (MGEs)
+## Caractérisation et analyse des Elements Genetiques Mobiles (MGEs)
 
 Nous avons développé dernièrement deux nouveaux modulex de MetaTOR permettant le binning des MGEs (metator mge) et l'attribution à leur(s) hôte(s) (metator host).
 Ce module est encore en développement et ne fonctionne pas encore avec cette nouvelle version de MetaTOR.
@@ -14,6 +14,8 @@ si vous voulez jeter un oeil à cette nouvelle approche et aux derniers résulta
 
 
 ### Principe du module metator mge 
+
+
 
 ![module_mge](docs/images/module_mge.png)
 
