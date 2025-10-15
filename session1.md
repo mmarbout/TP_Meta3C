@@ -85,11 +85,15 @@ il est alors possible de créer un environnement dédié à notre logiciel MetaT
 create -n metator bioconda::metator
 ```
 
-il faut ensuite activer l'envrionnement
+il faut ensuite activer l'envrionnement, cloner le repo github et reinstaller metator à partir de cet emplacement
 
 ```sh
 micromamba activate metator
+git clone https://github.com/koszullab/metator
+cd metator
+pip3 install -e .[dev]
 ```
+
 
 pour désactiver l'environnement, il suffit de taper la commande suivant 
 
