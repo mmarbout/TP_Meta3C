@@ -64,6 +64,7 @@ voici la lsite des fichiers:
 * valid_host_1.tsv
 * mges_plasmid_summary.tsv
 * mges_virus_summary.tsv
+* quality_summary.tsv
 
 
 explorez ces différents fichiers et réalisez les choses suivantes:
@@ -74,6 +75,6 @@ explorez ces différents fichiers et réalisez les choses suivantes:
 * A l'aide du fichier [contig_data_final.tsv] et des fichiers pairs, contruire et visualiser la matrice de ce mgeMAG (cf session4)
 
 refaire la même chose pour les MGEs suivants:
-* 
+* MetaTOR_MGE_00094
 
 
