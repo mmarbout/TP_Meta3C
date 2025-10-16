@@ -54,3 +54,23 @@ vous trouverez dans le dossier [metator_final/mge/] les différents fichiers d'o
 ls -l metator_final/mge/
 ```
 
+voici la lsite des fichiers:
+
+* mges_bin_summary.tsv
+* mges_binned.fa
+* contig_data_final.tsv
+* network_1.txt
+* allhost_association_score_1.tsv
+* valid_host_1.tsv
+* mges_plasmid_summary.tsv
+* mges_virus_summary.tsv
+
+
+explorez ces différents fichiers et réalisez les choses suivantes:
+
+* Combien de contigs sont contenus dans le mgeMAG MetaTOR_MGE_XXXX ?
+* est ce qu'il est annoté comme plasmide ou comme virus ?
+* Quel est(sont) son(ses) hôte(s) ?
+* A l'aide du fichier [contig_data_final.tsv] et des fichiers pairs, contruire et visualiser la matrice de ce mgeMAG (cf session4)
+
+
