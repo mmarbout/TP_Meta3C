@@ -68,9 +68,12 @@ voici la lsite des fichiers:
 
 explorez ces différents fichiers et réalisez les choses suivantes:
 
-* Combien de contigs sont contenus dans le mgeMAG MetaTOR_MGE_XXXX ?
+* Combien de contigs sont contenus dans le mgeMAG MetaTOR_MGE_00541 ?
 * est ce qu'il est annoté comme plasmide ou comme virus ?
 * Quel est(sont) son(ses) hôte(s) ?
 * A l'aide du fichier [contig_data_final.tsv] et des fichiers pairs, contruire et visualiser la matrice de ce mgeMAG (cf session4)
+
+refaire la même chose pour les MGEs suivants:
+* 
 
 
