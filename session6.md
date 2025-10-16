@@ -7,11 +7,18 @@ vous allez vous mettre par groupe de travail et me préparer une analyse de type
 il s'agit du suivi sur 13 mois (1 échantillon / mois)
 T1= mois n1 .. etc .. jusqu(à T13=mois n13
 
+![MK02_timeline](docs/images/MK02_timeline.png)
+
+
 tout est ici : 
 
 ```sh
 scp -r votre login@sftpcampus.pasteur.fr
 ```
+
+le dossier comprend les répertoires et fichiers suivants:
+
+![directory_session](docs/images/directory_session.png)
 
 A vous de jouer !!!!!
 
