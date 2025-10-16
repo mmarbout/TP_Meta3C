@@ -54,10 +54,9 @@ vous trouverez dans le dossier [metator_final/mge/] les différents fichiers d'o
 ls -l metator_final/mge/
 ```
 
-voici la lsite des fichiers:
+voici la liste des fichiers:
 
 * mges_bin_summary.tsv
-* mges_binned.fa
 * contig_data_final.tsv
 * network_1.txt
 * allhost_association_score_1.tsv
@@ -76,5 +75,6 @@ explorez ces différents fichiers et réalisez les choses suivantes:
 
 refaire la même chose pour les MGEs suivants:
 * MetaTOR_MGE_00094
+* MetaTOR_MGE_00016
 
 
