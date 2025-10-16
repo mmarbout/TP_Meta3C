@@ -2,7 +2,7 @@
 
 ## Session en autonomie par groupe de travail !!
 
-vous allez vous mettre par groupe de travail et me préparer une analyse de type métagénomique. Pour cela vous avez à votre disposition des jeux de données traités par MetaTOR et provenant du suivi temporel d'un microbiote infantile.
+vous allez vous mettre par groupe de travail et me préparer une analyse de type métagénomique. Pour cela vous avez à votre disposition un jeu de données traités par MetaTOR et provenant du suivi temporel d'un microbiote infantile.
 
 il s'agit du suivi sur 12 mois (~1 échantillon / mois)
 
