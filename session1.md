@@ -40,18 +40,22 @@ Vous allez travailler avec 4 fichiers de sorties de séquençage : les reads en 
 choisissez au hasard parmi les 10 jeux de données et copier les fichiers fastq correspondants (n'oubliez pas de changer le X !!!)
 
 ```sh
-scp votrelogin@sftpcampus.pasteur.fr:/pasteur/gaia/projets/p01/Enseignements/GAIA_ENSEIGNEMENTS/AdG_2024-2025/TP_Meta3C/fastq/libX_* fastq/
+scp votrelogin@sftpcampus.pasteur.fr:/pasteur/gaia/projets/p01/Enseignements/GAIA_ENSEIGNEMENTS/AdG_2025-2026/Meta3C/fastq/libX_* fastq/
 ```
 
 pour les différentes séances nous aurons également besoin de différentes données et fichiers.
 
 
-Copier les dossiers suivants sur GAIA --> [database/] [software/] [metator_final/] [scripts/] [assemblage/] 
+Copier les dossiers suivants sur GAIA --> 
+* [database/]
+* [metator_final/]
+* [scripts/]
+* [assemblage/] 
 
 je vous donne un exemple ci-dessous pour un de ces répertoires et je vous laisse faire pour les suivants ;)
 
 ```sh
-scp -r votrelogin@sftpcampus.pasteur.fr:/pasteur/gaia/projets/p01/Enseignements/GAIA_ENSEIGNEMENTS/AdG_2024-2025/TP_Meta3C/database/ ./
+scp -r votrelogin@sftpcampus.pasteur.fr:/pasteur/gaia/projets/p01/Enseignements/GAIA_ENSEIGNEMENTS/AdG_2025-2026/Meta3C/database/ ./
 ```
 
 C'est bon ? 
