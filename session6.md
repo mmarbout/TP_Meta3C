@@ -12,7 +12,7 @@ il s'agit d'un suivi sur 12 mois (~1 échantillon / mois)
 tout est ici : 
 
 ```sh
-scp -r votre login@sftpcampus.pasteur.fr
+scp -r votre login@sftpcampus.pasteur.fr:/pasteur/gaia/projets/p01/Enseignements/GAIA_ENSEIGNEMENTS/AdG_2026/Meta3C/session6/ ./
 ```
 
 le dossier comprend les répertoires et fichiers suivants:
