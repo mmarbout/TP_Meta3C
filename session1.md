@@ -60,7 +60,7 @@ scp -r votrelogin@sftpcampus.pasteur.fr:/pasteur/gaia/projets/p01/Enseignements/
 
 C'est bon ? 
 
-normalement si vous faites la commande suivante, vous devriez voir 7 répertoires.
+normalement si vous faites la commande suivante, vous devriez voir 6 répertoires.
 
 ```sh
 ls -l
