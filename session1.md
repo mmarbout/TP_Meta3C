@@ -96,6 +96,7 @@ micromamba activate metator
 git clone https://github.com/koszullab/metator
 cd metator
 pip3 install -e .[dev]
+cd ..
 ```
 
 
@@ -174,7 +175,7 @@ mkdir -p assemblage/rapport_assemblage/
 lancer les statistiques d'assemblage
 
 ```sh
-/Formation_AdG/quast-5.2.0/quast.py assemblage/final.contigs.fa -o assemblage/rapport_assemblage/ > log_files/quast_ass_raw.log 2>&1 
+quast.py assemblage/final.contigs.fa -o assemblage/rapport_assemblage/ > log_files/quast_ass_raw.log 2>&1 
 ```
 
 Afin d'avoir accès aux statistiques, ouvrir le fichier [report.html] (double clic).
