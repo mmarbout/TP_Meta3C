@@ -79,13 +79,13 @@ Pour le blast, nous utiliserons le logiciel diamond qui est une sorte de blast e
 pour voir l'ensemble des options du logiciel diamond:
 
 ```sh
-diamond help
+/bin_AdG/diamond help
 ```
 
 création des index
 
 ```sh
-diamond makedb -d database/Resfams --in database/Resfams.fa > log_files/blastdb_diamond.log 2>&1
+/bin_AdG/diamond makedb -d database/Resfams --in database/Resfams.fa > log_files/blastdb_diamond.log 2>&1
 ```
 
 création des répertoires de sortie
@@ -96,7 +96,7 @@ mkdir -p annotations/blast_output/
 
 faire les blasts 
 ```sh
-diamond blastp -p 8 --db database/Resfams.dmnd -o annotations/blast_output/prot_vs_AMR.txt --outfmt 6 -q annotations/prodigal/assembly_prot.fa
+/bin_AdG/diamond blastp -p 8 --db database/Resfams.dmnd -o annotations/blast_output/prot_vs_AMR.txt --outfmt 6 -q annotations/prodigal/assembly_prot.fa
 ```
 
 NB: le format de sortie "outfmt" est un format tabulaire donnant les infos suivantes:
@@ -110,7 +110,7 @@ on estime que l'on a un vrai homologue lorsque l'on a une identité d'au moins 8
 ![outfmt2](docs/images/outfmt2.png)
 
 ```sh
-diamond blastp -p 8 --db database/Resfams.dmnd -o annotations/blast_output/prot_vs_AMR.txt --outfmt 6 qseqid sseqid pident qcovs  -q annotations/prodigal/assembly_prot.fa
+/bin_AdG/diamond blastp -p 8 --db database/Resfams.dmnd -o annotations/blast_output/prot_vs_AMR.txt --outfmt 6 qseqid sseqid pident qcovs  -q annotations/prodigal/assembly_prot.fa
 ```
 
 Q: combien de vos gènes répondent aux critères définis au dessus ?
@@ -170,7 +170,7 @@ ls -l database/geNomad/
 ```
 
 
-Q : Combien de gènes candidats le programme Resfinder détecte t il ? faites une comparaison avec les méthodes précédentes.
+Q : Combien de gènes candidats le programme Resfinder détecte t il ? geNomad ? faites une comparaison avec les méthodes précédentes.
 
 vous pouvez par exemple utiliser ce site : http://bioinformatics.psb.ugent.be/webtools/Venn/
 
