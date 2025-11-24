@@ -86,7 +86,7 @@ micromamba self-update
 il est alors possible de créer un environnement dédié à notre logiciel MetaTOR.
 
 ```sh
-create -n metator bioconda::metator
+micromamba create -n metator bioconda::metator
 ```
 
 il faut ensuite activer l'envrionnement, cloner le repo github et reinstaller metator à partir de cet emplacement
